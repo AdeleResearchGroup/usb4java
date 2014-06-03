@@ -224,8 +224,8 @@
         </configuration>
       </plugin>
 
-      <!-- Build binary artifacts for Unix, Mac OS X and Windows -->
-      <plugin> 
+      <!-- Build binary artifacts for Unix, Mac OS X and Windows
+      <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <version>2.4</version>
         <configuration>
@@ -234,10 +234,9 @@
             <descriptor>src/main/assembly/tarball.xml</descriptor>
             <descriptor>src/main/assembly/zip.xml</descriptor>
           </descriptors>
-          <!-- Workaround for issue MASSEMBLY-449 -->        
           <archiverConfig>
-            <fileMode>420</fileMode> <!-- 420(dec) = 644(oct) -->
-            <directoryMode>493</directoryMode> <!-- 493(dec) = 755(oct) -->
+            <fileMode>420</fileMode>
+            <directoryMode>493</directoryMode>
             <defaultDirectoryMode>493</defaultDirectoryMode>
           </archiverConfig>
         </configuration>
@@ -249,10 +248,19 @@
               <goal>attached</goal>
             </goals>
           </execution>
-        </executions> 
-      </plugin>
+        </executions>
+      </plugin>-->
+
+        <plugin>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <configuration>
+                <skip>true</skip>
+            </configuration>
+        </plugin>
+
+
     </plugins>
-  </build>  
+  </build>
   
   <!--
   <profiles>
