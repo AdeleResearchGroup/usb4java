@@ -89,13 +89,13 @@ public class DeviceListIteratorTest
         this.iterator.next();
     }
     
-    /**
-     * Ensures that {@link DeviceListIterator#remove()} throws an exception
-     * because the list is read-only.
-     */
-    @Test(expected = UnsupportedOperationException.class)
-    public void testRemove()
-    {
-        this.iterator.remove();
-    }
+    // /**
+    //  * Ensures that {@link DeviceListIterator#remove()} throws an exception
+    //  * because the list is read-only.
+    //  */
+    // @Test(expected = UnsupportedOperationException.class)
+    // public void testRemove()
+    // {
+    //     this.iterator.remove();
+    // }
 }
