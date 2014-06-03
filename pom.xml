@@ -319,16 +319,17 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>    
     -->
-    <repository>
-      <id>ailis-releases</id>
-      <name>Ailis Maven Releases</name>
-      <url>http://nexus.ailis.de/content/repositories/releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>ailis-snapshots</id>
-      <name>Ailis Maven Snapshots</name>
-      <url>http://nexus.ailis.de/content/repositories/snapshots</url>
-    </snapshotRepository>    
+
+          <repository>
+              <id>icasa-deploy-cloudbees-release</id>
+              <name>Cloudbees Adele Repository</name>
+              <url>dav:https://repository-icasa.forge.cloudbees.com/release</url>
+          </repository>
+          <snapshotRepository>
+              <id>icasa-deploy-cloudbees-snapshot</id>
+              <name>iCasa Cloudbees Snapshot Private Repository</name>
+              <url>dav:https://repository-icasa.forge.cloudbees.com/snapshot</url>
+          </snapshotRepository>
 
   </distributionManagement>
   
